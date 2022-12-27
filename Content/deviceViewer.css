@@ -1,0 +1,237 @@
+﻿.no-animation * {
+    transition: none !important;
+}
+.device-area {
+    overflow: hidden;
+}
+.device-wrapper {
+    margin-left: -161px;
+}
+.resolution-side-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 161px;
+    height: 100%;
+    box-shadow: -7px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+/*
+    device icons
+*/
+.tablet-icon,
+.phone-icon,
+.rotate-icon,
+.device-icon-wrapper {
+    width: 80px;
+    height: 80px;
+}
+.device-icon-item .device-icon-wrapper div:first-child {
+    display: block;
+}
+.device-icon-item .device-icon-wrapper div:last-child {
+    display: none;
+}
+.device-icon-item.selected .device-icon-wrapper div:first-child {
+    display: none;
+}
+.device-icon-item.selected .device-icon-wrapper div:last-child {
+    display: block;
+}
+.device-icon-item .rotate {
+    display: block!important;
+}
+.device-icon-wrapper {
+    margin: 0 auto;
+}
+.device-icon-item {
+    margin-bottom: 8px;
+    cursor: pointer;
+    width: inherit;
+    height: 80px;
+}
+.device-icon-item:hover {
+    background-color: #f0f0f0;
+}
+
+.device-icon,
+.device-icon > div {
+    transition: border-color 0.2s ease-out;
+}
+.device-icon {
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 2px solid #afafaf;
+    border-radius: 5px;
+    position: relative;
+}
+.device-icon > div {
+    box-sizing: border-box;
+    border: 1px solid #d2d2d2;
+    height: 100%;
+}
+
+/*
+    device viewer
+*/
+.device-viewer {
+    visibility: hidden;
+}
+.device-viewer .device-viewer-border {
+    transition: padding 0.3s ease-out;
+}
+.device-viewer .device-viewer-screen {
+    transition: width 0.3s ease-out, height 0.2s ease-out;
+}
+.device-viewer,
+.device-viewer-border,
+.device-viewer-screen {
+    display: table;
+    box-sizing: border-box;
+}
+.device-viewer {
+    border: 2px solid #c3c3c3;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 2px;
+}
+.device-viewer-border {
+    border: 1px solid #dbdbdb;
+    border-radius: 26px;
+    padding: 32px;
+}
+.device-viewer-screen {
+    border: 2px solid #c3c3c3;
+    padding: 1px;
+    box-sizing: initial;
+}
+.dxIE .device-viewer-screen {
+    box-sizing: content-box;
+}
+
+.device-viewer.tablet .device-viewer-screen {
+    width: 800px;
+    height: 560px;
+}
+.device-viewer.tablet.rotate .device-viewer-screen {
+    width: 560px;
+    height: 800px;
+}
+.device-viewer.phone .device-viewer-screen {
+    width: 414px;
+    height: 768px;
+}
+.device-viewer.phone.rotate .device-viewer-screen {
+    width: 768px;
+    height: 414px;
+}
+.device-viewer.phone.rotate .device-viewer-border {
+    padding: 3px 32px;
+}
+.device-viewer.phone .device-viewer-border {
+    padding: 32px 3px;
+}
+/*
+    QR 
+*/
+.qrcode {
+    display: block;
+    background-color: white;
+    padding: 0 !important;
+    margin: 20px;
+    margin-top: 24px;
+    margin-bottom: 64px;
+}
+.qrcode > span {
+    display: none;
+}
+.qrcode img {
+    border: 1px solid #c3c3c3;
+    padding: 1px;
+    width: 120px;
+    height: 120px;
+}
+
+/*
+    Touch view
+*/
+.touch-container {
+    display: none;
+}
+.dxTouchUI .touch-container {
+    display: block;
+    padding: 20px;
+}
+.dxTouchUI .box-shadow-overflow,
+.dxTouchUI .device-area {
+    display: none;
+}
+.dxTouchUI .qrcode {
+    position: initial;
+    display: table;
+    margin: 20px auto;
+    text-align: center;
+}
+.dxTouchUI .qrcode img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.dxTouchUI .qrcode > span {
+    display: initial;
+}
+
+@media (max-width: 1400px) {
+    .qrcode {
+        position: absolute;
+        right: 0;
+        margin: 20px;
+    }
+    .box-shadow-overflow {
+        overflow: hidden;
+        height: 170px;
+    }
+    .resolution-side-bar {
+        position: relative;
+        width: 100%;
+        height: 161px;
+        box-shadow: 0px 2px 10px 0 rgba(0,0,0,0.1);
+    }
+    .device-icon-item {
+        height: 100%;
+        width: 20%;
+        float:left;
+        margin: 0;
+        cursor: auto;
+    }
+    .resolution-side-bar > .device-icon-item:first-child {
+        margin-top: 0;
+    }
+    .device-wrapper {
+        margin-left: 0;
+    }
+    .device-area {
+        margin-top: 50px;
+    }
+    .device-icon-item:hover {
+        background-color: transparent!important;
+        cursor: auto;
+    }
+    .device-icon-wrapper {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 0 auto;
+        margin-top: 22px;
+    }
+    .device-icon-wrapper:hover {
+        background-color: #f0f0f0;
+    }
+    .device-icon-wrapper div {
+	    top: 20px;
+	    left: 50%;
+	    margin-left: -40px;
+	    position: relative;
+    }
+}
