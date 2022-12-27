@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ASPxGanttDemos", ".", "{191BD7E2-E89F-45AD-91DA-D83D5806DC67}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{B681C0F5-978D-45A0-A3B5-6D3860FD749D}|Web.DemoData.v18.2.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/ASPxGanttDemos"
+		Debug.AspNetCompiler.PhysicalPath = "..\ASPxGanttDemos\"
+		Debug.AspNetCompiler.TargetPath = "..\PrecompiledWeb\ASPxGanttDemos\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ASPxGanttDemos"
+		Release.AspNetCompiler.PhysicalPath = "..\ASPxGanttDemos\"
+		Release.AspNetCompiler.TargetPath = "..\PrecompiledWeb\ASPxGanttDemos\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "21194"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{B681C0F5-978D-45A0-A3B5-6D3860FD749D} = {B681C0F5-978D-45A0-A3B5-6D3860FD749D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.DemoData", "..\..\..\Components\CS\Web.DemoData\Web.DemoData.csproj", "{B681C0F5-978D-45A0-A3B5-6D3860FD749D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{191BD7E2-E89F-45AD-91DA-D83D5806DC67}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{191BD7E2-E89F-45AD-91DA-D83D5806DC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{191BD7E2-E89F-45AD-91DA-D83D5806DC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{191BD7E2-E89F-45AD-91DA-D83D5806DC67}.Release|.NET.ActiveCfg = Debug|Any CPU
+		{191BD7E2-E89F-45AD-91DA-D83D5806DC67}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{191BD7E2-E89F-45AD-91DA-D83D5806DC67}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{B681C0F5-978D-45A0-A3B5-6D3860FD749D}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{B681C0F5-978D-45A0-A3B5-6D3860FD749D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B681C0F5-978D-45A0-A3B5-6D3860FD749D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B681C0F5-978D-45A0-A3B5-6D3860FD749D}.Release|.NET.ActiveCfg = Release|Any CPU
+		{B681C0F5-978D-45A0-A3B5-6D3860FD749D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B681C0F5-978D-45A0-A3B5-6D3860FD749D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
